@@ -752,6 +752,7 @@ export default class Camera extends React.Component<PropsType, StateType> {
             {...nativeProps}
             style={StyleSheet.absoluteFill}
             ref={this._setReference}
+            captureAudio={false}
             onMountError={this._onMountError}
             onCameraReady={this._onCameraReady}
             onGoogleVisionBarcodesDetected={this._onObjectDetected(
